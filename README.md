@@ -31,6 +31,20 @@ install antivirus
 
 remove unneccesary programs
 
+# file transfer methods
+netcat
+sftp
+ftp
+windows remote management
+RDP clipboard
+ssh clipboard
+online clipboard
+
+# things to kill
+kill solar winds
+search for log4j
+
+
 # to lock down a computer
    windows
      windows firewall
@@ -151,12 +165,4 @@ Keith Hill Lead Web Developer Yes
    
 
 ## Password List
-   
-## Links
-https://github.com/fabacab/awesome-cybersecurity-blueteam
-   
-https://github.com/decalage2/awesome-security-hardening
-   
-https://github.com/A-poc/BlueTeam-Tools
-   
    
