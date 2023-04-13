@@ -1,5 +1,57 @@
 # pcdc
 
+
+##
+
+enumerate the machines ( collin buckler zenmap )
+
+create new users / passwords / disable old usernames/passowrds / update old userpasswords send to gold team
+lock down the root account
+
+create a new domain admin, and remove all others
+
+keylogger resistent password generation
+date | md5sum
+apg
+
+windows firewall inbound and outbound - port restriction
+   smtp
+   pop
+   443
+   ssh 
+   53
+   voice
+   email
+   RDP
+   monitoring tool port
+
+install antivirus
+   windows clamav (defender?)
+   linux clamav
+
+remove unneccesary programs
+
+# to lock down a computer
+   windows
+     windows firewall
+     windows registry
+     windows update
+     windows security center
+     windows task manager
+     windows powershell
+
+   linux
+   mac
+
+look at scheduled tasks (logic bombs)
+
+# web service hardening
+run as non privledged user
+run in root jail
+
+
+
+
 ## World share
 
 \\share.pcdc.local\worldshare
@@ -40,11 +92,9 @@ Help Desk Ticketing > Request
 
 Help Desk URL - https://stemoutreachrockscom358.sharepoint.com/sites/GoldTeamHelpDesk
 
-
 public and free, with citation, gold team approval
 
 printed out on paper, with citation, gold team approval
-
 
 ## Inject
 
