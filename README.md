@@ -14,17 +14,24 @@ SUBJECT: Incident Reporting
 BODY:
 Team #: ___________
 Time(s) of Incident: ___________
+
 Asset(s) Affected: ___________
+
 Source (IP Address) of Attack: ___________
+
 Description of Attack/Incident: ___________
+
 Remediation/Plan to Resolve: ___________
+
 
 ### Firewall Requests
 Help Desk Ticketing > Request
+
 Help Desk URL - https://stemoutreachrockscom358.sharepoint.com/sites/GoldTeamHelpDesk
 
 ### Scripts/tools
 Help Desk Ticketing > Request
+
 Help Desk URL - https://stemoutreachrockscom358.sharepoint.com/sites/GoldTeamHelpDesk
 
 
