@@ -69,7 +69,7 @@ run in root jail
 
 \\share.pcdc.local\worldshare
 
-## AWS Wrokspace
+## AWS Workspace
 SSH
 
 RDP
