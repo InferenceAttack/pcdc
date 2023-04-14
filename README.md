@@ -4,6 +4,7 @@
 ##
 
 enumerate the machines ( collin buckler zenmap )
+https://nmap.org/download.html#windows
 
 create new users / passwords / disable old usernames/passowrds / update old userpasswords send to gold team
 lock down the root account
