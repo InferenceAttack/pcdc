@@ -1,0 +1,32 @@
+## Echo out Users with some extra info
+Get-LocalUser | Select-Object Name,Enabled,PasswordLastSet,Created
+
+## PowerShell command to remove a user account from the local system:
+$baduser = Read-Host "What user account do you wish to kill"; Remove-LocalUser -Name "$baduser"
+
+## Powershell command to show all local groups
+Get-LocalGroup
+
+## PowerShell command that will delete a local group on the computer:
+$badgroup = Read-Host "What group would you like to delete?";Remove-LocalGroup -Name "$badgroup"
+
+## Echo out members of the local Admin group:
+Get-LocalGroupMember -Group "Administrators" | Select-Object Name, PrincipalSource | Format-Table -AutoSize
+
+## PowerShell command to remove an admin from the local "Administrators"group:
+$badadmin = Read-Host "What admin account do you wish to kill"; Remove-LocalGroupMember -Group "Administrators" -Member "$badadmin"
+
+## PowerShell that checks for SMB and NFS network shares on the local system (Note: NFS must be installed for the "Get-NfsShare" cmdlet to work):
+Get-SmbShare; Get-NfsShare
+
+## PowerShell command that removes a single SMB or NFS network share from the local system:
+
+Remove-SmbShare -Name "BADSHARE"
+
+Remove-NfsShare -Name "BADSHARE"
+
+## PowerShell command that checks for active shells on the local system and asks you if you would like to kill anything via the process Id:
+while($true){Clear-Host; Get-Process | Where-Object {$_.ProcessName -match "cmd|powershell|bash"} | Format-Table Name,Id,StartTime;;$badshell = Read-Host "What shell would you like to kill(Id)? Your shell=$PID";Stop-Process -Id "$badshell" -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1}
+
+
+
