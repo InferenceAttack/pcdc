@@ -55,7 +55,6 @@ search for log4j
      windows powershell
 
    linux
-   mac
 
 look at scheduled tasks (logic bombs)
 
