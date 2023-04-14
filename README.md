@@ -137,7 +137,9 @@ Stemrocks (Mail/Teams) - https://portal.office.com (out of scope)
 PRO-blueXX@stemrocks.org (what is XX? 23?)
 
 ## People
-Michael Scott CEO Yes 
+   
+|-- First Name --|-- Last Name --|-- Position --|-- Domain Admin --|
+| Michael | Scott | CEO | Yes |
    
 Mr. Green - Chief Information Systems Officer (CISO). TODO ask for offensive security permission
    
