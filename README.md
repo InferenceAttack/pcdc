@@ -166,5 +166,5 @@ https://github.com/decalage2/awesome-security-hardening
 https://github.com/A-poc/BlueTeam-Tools
    
 https://github.com/RedHatOfficial/ansible-role-rhel8-stig
-   
-   
+
+https://www.stigviewer.com/stig/windows_10/
