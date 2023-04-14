@@ -139,11 +139,10 @@ PRO-blueXX@stemrocks.org (what is XX? 23?)
 ## People
    
 | **First Name** | **Last Name** | **Position** | **Domain Admin** |
+| -------------- | ------------- | ------------ | ---------------- |
 | Michael | Scott | CEO | Yes |
-   
-Mr. Green - Chief Information Systems Officer (CISO). TODO ask for offensive security permission
-   
-Angela Martin CFO No
+| Andy    | Green | CISO | Yes |
+| Angela  | Martin | CFO | No |
    
 Oscar Marinez Lead Accountant No
    
