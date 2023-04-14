@@ -133,7 +133,7 @@ Web Mail - http://mail.blueXX.pcdc.local (in scope)
 Stemrocks (Mail/Teams) - https://portal.office.com (out of scope)
    
 
-PRO-blueXX@stemrocks.org (what is XX? 23?)
+PRO-blueXX@stemrocks.org (what is XX? 23?)  (My guess is each Blue Team gets a number -Alex)
 
 ## People
    
