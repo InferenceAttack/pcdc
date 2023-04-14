@@ -149,15 +149,10 @@ PRO-blueXX@stemrocks.org (what is XX? 23?)
 |Kevin | Malone | Food Services Lead | No | |
 | Joe | Ortiz | Marketing Lead | No | |
 | Dwight | Shrute | Sales Lead | No | |
-   
-Dylan Sanders Executive Assistant No
-   
-Kathryn Soulis Lead Enterprise Administrator Yes
-   
-Abigail Jenkins Lead Network Administrator Yes
-   
-Keith Hill Lead Web Developer Yes 
-   
+| Dylan | Sanders | Executive Assistant | No | |
+| Kathryn | Soulis | Lead Enterprise Administrator | No | |
+| Abigail | Jenkins | Lead Network Administrator | Yes | |
+| Keith | Hill | Lead Web Developer | Yes | |   
 
 ## Password List
 
