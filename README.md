@@ -138,23 +138,17 @@ PRO-blueXX@stemrocks.org (what is XX? 23?)
 
 ## People
    
-| **First Name** | **Last Name** | **Position** | **Domain Admin** |
-| -------------- | ------------- | ------------ | ---------------- |
-| Michael | Scott | CEO | Yes |
-| Andy    | Green | CISO | Yes |
-| Angela  | Martin | CFO | No |
-   
-Oscar Marinez Lead Accountant No
-   
-Kelly Kapoor (Kelly.Kapoor@blueXX.pcdc.local) - Help Desk Lead No
-   
-Larry Lee Customer Service Lead No
-   
-Kevin Malone Food Services Lead No
-   
-Joe Ortiz Marketing Lead No
-   
-Dwight Shrute Sales Lead No
+| **First Name** | **Last Name** | **Position** | **Domain Admin** | **E-Mail** |
+| -------------- | ------------- | ------------ | ---------------- | ----------------|
+| Michael | Scott | CEO | Yes | |
+| Andy    | Green | CISO | Yes | |
+| Angela  | Martin | CFO | No | |
+| Oscar | Marinez | Lead Accountant |  No | |
+| Kelly | Kapoor | Help Desk Lead | No | Kelly.Kapoor@blueXX.pcdc.local |   
+| Larry | Lee | Customer Service Lead | No | |
+|Kevin | Malone | Food Services Lead | No | |
+| Joe | Ortiz | Marketing Lead | No | |
+| Dwight | Shrute | Sales Lead | No | |
    
 Dylan Sanders Executive Assistant No
    
