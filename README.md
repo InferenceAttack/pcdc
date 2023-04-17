@@ -27,7 +27,7 @@ windows firewall inbound and outbound - port restriction
    monitoring tool port
 
 install antivirus
-   windows clamav (defender?) or Malwarebytes Freemium
+   windows clamav (defender?) or Malwarebytes Freemium https://www.malwarebytes.com/mwb-download/thankyou
    linux clamav
 
 remove unneccesary programs
