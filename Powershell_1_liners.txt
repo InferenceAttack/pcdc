@@ -33,7 +33,10 @@ while($true){Clear-Host; Get-Process | Where-Object {$_.ProcessName -match "cmd|
 Add-LocalGroupMember -Group "Administrators" -Member "username1","username2","username3"
 
 ## Creating a new user with password
-New-LocalUser -Name "username" -Description "user description" -AccountNeverExpires -Password (ConvertTo-SecureString "P@ssword123" -AsPlainText -Force)
+$Username = Read-Host "Enter new username:"; $Password = Read-Host "Enter password for the new user; New-LocalUser -Name "$Username" -Description "user description" -AccountNeverExpires -Password "$Password" 
+
+
+
 
 ####################################################################Firewall Crap######################################################################################
 
