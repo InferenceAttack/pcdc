@@ -1,3 +1,4 @@
+###################################################################Local Crap##########################################################################################
 ## Echo out Users with some extra info
 Get-LocalUser | Select-Object Name,Enabled,PasswordLastSet,Created
 
@@ -27,6 +28,73 @@ Remove-NfsShare -Name "BADSHARE"
 
 ## PowerShell command that checks for active shells on the local system and asks you if you would like to kill anything via the process Id:
 while($true){Clear-Host; Get-Process | Where-Object {$_.ProcessName -match "cmd|powershell|bash"} | Format-Table Name,Id,StartTime;;$badshell = Read-Host "What shell would you like to kill(Id)? Your shell=$PID";Stop-Process -Id "$badshell" -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1}
+
+## To add a new user as a local administrator
+Add-LocalGroupMember -Group "Administrators" -Member "username1","username2","username3"
+
+## Creating a new user with password
+New-LocalUser -Name "username" -Description "user description" -AccountNeverExpires -Password (ConvertTo-SecureString "P@ssword123" -AsPlainText -Force)
+
+####################################################################Firewall Crap######################################################################################
+
+## Firewall block ports
+$port = Read-Host "Enter port numbers to block (comma-separated)"
+$ports = $port -split "," | ForEach-Object {$_.Trim()}
+$RuleName = "Read-Host "Enter rule name:"
+
+foreach ($port in $ports) {
+    New-NetFirewallRule -DisplayName "$RuleName $port" -Direction Inbound -LocalPort $port -Protocol TCP -Action Block
+}
+## Firewall open Ports
+$ports = Read-Host "Enter port numbers to allow (comma-separated)"
+$ports = $ports -split "," | ForEach-Object {$_.Trim()}
+$RuleName = "Read-Host "Enter rule name:"
+
+foreach ($port in $ports) {
+    New-NetFirewallRule -DisplayName "$RuleName"
+
+## Blocking firewall via IP
+$IP = Read-Host "Enter the IP address to block"
+$RuleName = "Read-Host "Enter rule name:"
+$Rule = Get-NetFirewallRule -DisplayName $RuleName
+
+if (!$Rule) {
+    New-NetFirewallRule -DisplayName $RuleName -Direction Inbound -RemoteAddress $IP -Action Block
+    Write-Host "Firewall rule created to block IP $IP"
+}
+else {
+    Set-NetFirewallRule -DisplayName $RuleName -RemoteAddress $IP -Enabled True
+    Write-Host "Firewall rule updated to block IP $IP"
+}
+
+## Removing firewall rules by name
+$RuleName = Read-Host "Enter the name of the firewall rule to delete"
+$Rule = Get-NetFirewallRule -DisplayName $RuleName
+
+if ($Rule) {
+    Remove-NetFirewallRule -DisplayName $RuleName
+    Write-Host "Firewall rule $RuleName deleted"
+}
+else {
+    Write-Host "Firewall rule $RuleName not found"
+}
+
+
+#################################################################Active Directory Crap#################################################################################
+
+## Quick Creating a AD User account (Need to edit the domain info)
+$name = Read-Host "Enter Username"; $Password = Read-Host "Enter password" -AsSecureString; New-ADUser -Name "$name" -SamAccountName "jsmith" -UserPrincipalName "$name@contoso.com" -AccountPassword $Password -Enabled $true -Path "OU=Users,DC=contoso,DC=com"
+
+## Quick AD filtered User enumeration
+Get-ADUser -Filter * -Properties GivenName, Surname, EmailAddress
+
+## Quick AD User Removal
+$user = Read-Host "Enter Identity of the AD user you wish to delete:"; Remove-ADUser -Identity "$user"
+
+## quick user enumeration
+Get-ADUser -Filter * -Properties *
+
+
 
 
 
